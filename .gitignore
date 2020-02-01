@@ -9,8 +9,8 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-img
-font-files
+img/
+font-files/
 
 # ignore these plugins
 wp-content/plugins/hello.php
