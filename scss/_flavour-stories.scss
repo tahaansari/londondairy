@@ -1,0 +1,31 @@
+.flavour-stories{
+    &__bg{
+        background: #005BE1;
+        color: #ffffff;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    &__content{
+        max-width: 340px;
+    }
+    &__title{
+        max-width: 176px;
+        border-bottom: 1px solid #ffffff;
+        margin-bottom: 20px;
+    }
+    @media(max-width: 991px){
+        &__bg{
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        &__title{ 
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__content{
+            text-align: center;
+            margin: auto;
+        }
+    }
+}

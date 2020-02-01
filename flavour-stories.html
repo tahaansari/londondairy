@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="U_8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>London Dairy</title>
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/slick.css" />
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="css/main.min.css" />
+   </head>
+   <body>
+      <div class="overlay"></div>
+      <!-- <?php  include 'includes/header.php';?> -->
+      <div class="flavour-stories__bg">
+        <div class="container">
+
+            <div class="flavour-stories">
+                <div class="flavour-stories__content">
+                    <div class="block">
+                        <h2 class="flavour-stories__title">The Geography of Flavours!</h2>
+                    </div>
+                    <p class="flavour-stories__desc">
+                        We constantly strive for the finer things in life and love sharing them with those who share in our impeccable taste. Explore the gorgeous ingredients that inspire our creations, making your London Dairy experience even more heavenly! 
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      <!-- <?php include 'includes/footer.php';?> -->
+   </body>
+   <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      crossorigin="anonymous"
+      ></script>
+   <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      crossorigin="anonymous"
+      ></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/jquery.mCustomScrollbar.min.js"></script>
+   <script src="js/main.js"></script>
+   <script>
+       $(document).ready(function(){
+            $('.featured__sldier').slick({
+                slidesToShow:3,
+                responsive:[
+                    {
+                        breakpoint:992,
+                        settings:{
+                            slidesToShow:2,
+                        }
+
+                    },
+                    {
+                        breakpoint:480,
+                        settings:{
+                            slidesToShow:1,
+                        }
+
+                    }
+                ]
+
+            })
+            // only for mobile
+            if($(window).width() < 991){
+                $('.recipe__filter').slick({
+                    arrows:false,
+                    variableWidth:true,
+                    infinite:false,
+                })
+            }
+       })
+   </script>
+</html>

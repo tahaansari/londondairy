@@ -1,0 +1,10 @@
+.big-font{
+    font-family: "signPainter";
+    font-size: 150px;
+    color: #EFE4D3;
+    line-height: 1;
+    text-align: center;
+    @media(max-width: 991px){
+        font-size: 70px;
+    }
+}

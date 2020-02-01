@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>London Dairy</title>
+      <link
+         rel="stylesheet"
+         href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         crossorigin="anonymous"
+         />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="scss/slick.css" />
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="css/main.min.css" />
+   </head>
+   <body>
+      <div class="overlay"></div>
+      <!-- <?php include 'includes/header.php';?> -->
+      <section class="mainstore-wrap">
+         <div class="">
+         <div class="left-section col-md-6">
+            <div class="search-wrapper">
+               <h3>Find A Store Near You</h3>
+               <div class="search-form-custom">
+                  <form class="search-form" method="POST" id="search-form">
+                     <div class="search-salon-wrapper">
+                        <input type="search" id="txtFilterSalons" name="txtFilterSalons" placeholder="Enter Your Location/Pincode"  class="search">
+                        <input type="hidden" id="txtgetValue" name="txtgetValue" value="<?php echo $_GET['f']; ?>">
+                        <a href="javascript:void(0)" class="searchLocation">Search</a>
+                        <a href="javascript:void(0)" class="listmap-btn">Map</a>
+                        <div class="c-three-dots-loader loader_gif" style="display: none;"> </div>
+                     </div>
+                  </form>
+               </div>
+               <ul class="address-list">
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur,  Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910"><i class="callicon"></i>+91 92 275 50910</a>
+                        <a href="javascript:void(0)" class="get_direction"><i class="locateicon"></i>Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur,  Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910"><i class="callicon"></i>+91 92 275 50910</a>
+                        <a href="javascript:void(0)"><i class="locateicon"></i>Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+                  <li>
+                     <h5>Grace Collection, Vastrapur, Ahmedabad</h5>
+                     <p>7, 1st Floor, Millenium Plaza, Near Balaji Avenue, Vastrapur, Ahmedabad, Gujarat - 380015</p>
+                     <div class="links-wrap">
+                        <a href="tel:+91 92 275 50910">+91 92 275 50910</a>
+                        <a href="javascript:void(0)">Get Directions</a>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="right-section col-md-6">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.375936847956!2d72.82576331538357!3d19.003149059195465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ceecd34c6a25%3A0x65bdb6d376aeb33e!2sSchbang!5e0!3m2!1sen!2sin!4v1575358616211!5m2!1sen!2sin" width="100%" height="100vh" id="map" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <!-- <div tabindex="0" id="map" style="width: 100%; height: 100vh;"></div> -->
+         </div>
+      </section>
+      <!-- <?php include 'includes/footer.php';?> -->
+   </body>
+   <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      crossorigin="anonymous"
+      ></script>
+   <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      crossorigin="anonymous"
+      ></script>
+   <script src="js/slick.min.js"></script>
+   <script src="js/jquery.mCustomScrollbar.min.js"></script>
+   <script src="js/main.js"></script>
+</html>

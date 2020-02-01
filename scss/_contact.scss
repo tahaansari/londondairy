@@ -1,0 +1,187 @@
+// TAHA CODE STARTS
+.contactus-bg{ 
+    width: 100%;
+    float: left;
+    background: #00245A url(../img/icecreambg.png) no-repeat center/cover; 
+    color: #ffffff; 
+    h2{ color: #ffffff; }
+    h3{ color: #ffffff; }
+}
+.contact-icons{
+    padding: 60px 0;
+    text-align: center;
+    .col-md-4{
+        padding-top: 25px;
+        padding-bottom: 60px;
+        &:nth-child(2){
+            border-left: 1px solid #3369AC;
+            border-right: 1px solid #3369AC;
+        }
+    }
+    &__item{
+        width: 100%;
+        float: left;
+    }
+    &__header{ 
+        text-transform: uppercase; 
+        margin-bottom: 25px;
+    }
+    &__heading{ 
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    &__text{
+        color: #F5F5F5;
+        width: 100%;
+        float: left;
+    }
+    &__icon{
+        display: inline-block;
+        padding: 40px;
+    }    
+    &--phone{ 
+        background: url(../img/settings.svg) no-repeat center/contain;
+    }
+    &--location{ 
+        background: url(../img/location-con.svg) no-repeat center/contain;
+    }
+    &--email{ 
+        background: url(../img/contact-us.svg) no-repeat center/contain;
+    }
+    @media(max-width:991px){
+        .col-md-4{ 
+            padding-top: 0; 
+            padding-bottom: 0; 
+            width: 100%;
+            float: left;
+            &:nth-child(2){ border: none; } 
+            &:last-child{ 
+                .contact-icons__item{
+                    margin-bottom: 0;
+                }
+            } 
+        }
+        &__item{ 
+            padding-bottom: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #3369AC;
+        }
+    }
+}
+.enq-form{
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+    &__limit{
+        max-width: 490px;
+    }
+    &__heading{ 
+        text-align: center;
+        margin-bottom: 40px; 
+    }
+    &__inputWrap{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+    }
+    &__form{
+        width: 100%;
+        float: left;    
+    }
+    &__input{
+        background: transparent;
+        color: #ffffff;
+        border: 1px solid #67B0FF;
+        border-radius: 20px;
+        padding: 15px 30px;
+        font-size: 12px;
+        max-width: 346px;
+        width: 100%;
+    }
+    &__input--textarea{
+        height: 115px;
+        display: block;
+        margin: auto;
+    }
+    &__error{
+        display: none;
+        margin: 5px 0;
+        color: red;
+        font-size: 12px;
+    }
+    ::placeholder{
+        color: #ffffff;
+    }
+    @media(max-width: 991px){
+        padding: 30px 0;
+    }
+
+}
+.enq-form--vender{
+    .enq-form__limit{
+        max-width: 719px;
+    }
+    .enq-form__inputWrap{
+        width: 50%;
+        float: left;
+        &:nth-child(odd){ justify-content: flex-start; }
+        &:nth-child(even){ justify-content: flex-end; }
+        &:last-child{ width: 100%; justify-content: center; }
+        &:nth-last-child(2){
+            width: 100%;
+            .enq-form__input--textarea{
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+    }
+    @media(max-width: 991px){
+        .enq-form__inputWrap{ width: 100%; }
+        .enq-form__inputWrap:nth-child(odd){ justify-content: center; }
+        .enq-form__inputWrap:nth-child(even){ justify-content: center; }
+        .enq-form__inputWrap:nth-last-child(2){
+            .enq-form__input--textarea{
+                max-width: 346px;
+            }
+        }
+    }
+}
+
+.follow{
+    padding: 60px 0;
+    &__header-wrap{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    &__header{
+        margin-bottom: 20px;
+    }
+    &__social{
+        font-size: 0;
+    }
+    &__on{
+        display: inline-block;
+        padding: 10px;
+        margin: 0 20px;
+    }
+    &__on--wp{
+        background: url(../img/follow_whatsapp.svg) no-repeat center/contain;
+    }
+    &__on--insta{
+        background: url(../img/follow_insta.svg) no-repeat center/contain;
+    }
+    &__on--fb{
+        background: url(../img/follow_fb.svg) no-repeat center/contain;
+    }
+    &__map{
+        background-color: #eeeeee;
+        height: 400px;
+    }
+    @media(max-width: 991px){
+        padding: 30px 0;
+    }
+}

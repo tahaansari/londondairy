@@ -1,0 +1,280 @@
+@font-face {
+  font-family: "helveticabold";
+  src: url("../fonts/helvetica_bold-webfont.eot");
+  src: url("../fonts/helvetica_bold-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/helvetica_bold-webfont.woff2") format("woff2"),
+    url("../fonts/helvetica_bold-webfont.woff") format("woff"),
+    url("../fonts/helvetica_bold-webfont.svg#helveticabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('../fonts/helvetica-webfont.eot');
+    src: url('../fonts/helvetica-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helvetica-webfont.woff2') format('woff2'),
+         url('../fonts/helvetica-webfont.woff') format('woff'),
+         url('../fonts/helvetica-webfont.ttf') format('truetype'),
+         url('../fonts/helvetica-webfont.svg#helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'signPainter';
+    src: url('../fonts/SignPainterHouseScript.eot');
+    src: url('../fonts/SignPainterHouseScript.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SignPainterHouseScript.woff2') format('woff2'),
+        url('../fonts/SignPainterHouseScript.woff') format('woff'),
+        url('../fonts/SignPainterHouseScript.ttf') format('truetype'),
+        url('../fonts/SignPainterHouseScript.svg#SignPainterHouseScript') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: "optimanormal";
+  src: url("../fonts/optima-webfont.eot");
+  src: url("../fonts/optima-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/optima-webfont.woff2") format("woff2"),
+    url("../fonts/optima-webfont.woff") format("woff"),
+    url("../fonts/optima-webfont.svg#optimanormal") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "optimabold";
+  src: url("../fonts/optima_b-webfont.eot");
+  src: url("../fonts/optima_b-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/optima_b-webfont.woff2") format("woff2"),
+    url("../fonts/optima_b-webfont.woff") format("woff"),
+    url("../fonts/optima_b-webfont.svg#optimabold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$fontHelveticaBold:"helveticabold";
+$fontHelveticaRegular:"helveticaregular";
+$fontSign: "signPainter";
+$fontOptimaBold:"optimabold";
+$fontOptimaRegular:"optimanormal";
+
+$whte: #ffffff;
+$brandcolor: #00193e;
+$brandcolor2: #ad9558;
+$blck: #000000;
+$trans: all .5s;
+
+*{ outline: none!important; }
+ 
+// color: #06357A;
+body { font-family: $fontOptimaRegular; font-size: 18px; line-height: 1.6; }
+// p{letter-spacing: 1.06667px;}
+h1, h2, h3, h4, h5, h6{ margin: 0; padding: 0; line-height: 1; font-weight: normal; color:#00193E }
+p{ margin: 0; padding: 0; line-height: 1.6; font-weight: normal; }
+
+h2 { font-family: $fontOptimaBold; font-size: 25px; }
+h3 { font-family: $fontOptimaRegular; font-size: 25px; }
+h4 { font-family: $fontOptimaRegular; font-size: 20px; }
+h5 { font-family: $fontOptimaBold; font-size: 18px; }
+
+@media(max-width:991px){
+    body { font-size: 14px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 18px; }
+    h4 { font-size: 16px; }
+    h5 { font-size: 16px; }
+} 
+
+b{
+  font-family: $fontOptimaBold;
+}
+
+ul{ list-style: none; margin: 0; padding: 0;}
+
+a { 
+  color: inherit;
+  &:hover,
+  &:active,
+  &:focus{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+// section{
+//     width: 100%;
+//     float: left;
+//     margin-top: 60px;
+//     margin-bottom: 60px;
+//     @media(max-width: 992px){
+//         margin-top: 30px;
+//         margin-bottom: 30px;
+//     }
+// }
+
+.btnld {
+
+  transition: background 0.2s;
+    
+  display: inline-block;
+  max-width: 170px;
+  padding: 6px 16px;
+  padding-right: 34px;
+  font-size: 14px;
+  border-radius: 30px;
+  position: relative;
+  font-family: $fontOptimaBold;
+  
+  background-color: transparent;
+  border: 2px solid $brandcolor2;
+  color: $brandcolor2;
+
+  &:hover{
+    background-color: $brandcolor2;
+    color: #ffffff;
+    .arrow-right {
+        border-top: 2px solid #ffffff;
+        border-left: 2px solid #ffffff;    
+    }
+  }
+
+  .arrow-right {
+    position: absolute;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    background: transparent;
+    border-top: 2px solid $brandcolor2;
+    border-left: 2px solid $brandcolor2;
+    transform: translateY(-50%) rotate(135deg);
+    right: 20px;
+    color: transparent;
+  }
+
+  &.blue{
+    background-color: transparent;
+    border: 2px solid $brandcolor;
+    color: $brandcolor;
+    .arrow-right{
+         border-top: 2px solid $brandcolor;
+         border-left: 2px solid $brandcolor;
+    }
+    &:hover{
+        background-color: $brandcolor;
+        color: #fff;
+        .arrow-right {
+            border-top: 2px solid #ffffff;
+            border-left: 2px solid #ffffff;    
+        }
+    }
+  }
+
+    @media(max-width: 991px){
+        padding: 4px 14px;
+        padding-right: 30px;
+        font-size: 12px;
+        .arrow-right {
+            right: 14px;
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+}
+
+.btn-blue{
+    transition: 0.2s;
+    display: inline-block;
+    background: #00193E;
+    border:1px solid #00193E;
+    color: #fff;
+    padding: 7px 18px;
+    border-radius: 5px;
+    &:hover{
+        background: transparent;
+        color: #00193E;
+    }
+}
+
+.input-btnId{
+    position: relative;
+    display: inline-block;
+    .btnld {
+        &:hover{
+            + .arrow-right{
+                border-top: 2px solid #ffffff;
+                border-left: 2px solid #ffffff;    
+            }
+
+        }
+    }
+    .arrow-right {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        width: 12px;
+        height: 12px;
+        background: transparent;
+        border-top: 2px solid $brandcolor2;
+        border-left: 2px solid $brandcolor2;
+        transform: translateY(-50%) rotate(135deg);
+        right: 20px;
+        color: transparent;
+    }
+}
+
+
+.block{ display: block; }
+.inlineBlock{ display: inline-block }
+
+.overlay{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  display: block;
+  z-index: 1;
+  display: none;
+}
+
+.img-wrap{
+  width: 100%;
+  float: left;
+  img{
+    width: 100%;
+  }
+}
+
+.notext{font-size: 0;}
+
+.nomarTop{ margin-top: 0; }
+.nomarBottom{ margin-top: 0; }
+.nomarLeft{ margin-top: 0; }
+.nomarRight{ margin-top: 0; }
+.nomar{ margin: 0; }
+
+.nopadTop{ padding-top: 0; }
+.nopadBottom{ padding-bottom: 0; }
+.nopadLeft{ padding-left: 0; }
+.nopadRight{ padding-right: 0; }
+.nopad{ padding: 0; }
+
+// @media (max-width: 1199px){
+//     .container { width: 100% }
+// }
+
+// @media(min-width:1323px){
+//   .container{ width: 90%; margin: auto; }
+// }
+
+// @media (min-width: 1200px){
+//     .container {
+//         width: 80%;
+//     }
+// }

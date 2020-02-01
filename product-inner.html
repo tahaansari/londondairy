@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>London Dairy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="scss/slick.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- <?php  include 'includes/header.php';?> -->
+    <div class="inner__bg">
+        <div class="container">
+
+            <img class="inner__ico inner__ico--1" src="img/left1.png" alt="">
+            <img class="inner__ico inner__ico--2" src="img/left2.png" alt="">
+            <img class="inner__ico inner__ico--3" src="img/left3.png" alt="">
+
+            <div class="inner">
+                <div class="inner__left">
+                    <div class="inner__content">
+                        <h2 class="inner__title">Almond Chocolate</h2>
+                        <div class="inner__btnwrap">
+                            <a href="#" class="btn-blue">Buy Now</a>
+                            <a href="#" class="btn-blue">Related Recipe</a>
+                        </div>
+                        <p class="inner__info">Available in: 110ml stick</p>
+                    </div>
+                </div>
+                <div class="inner__center">
+                    <img class="inner__img" src="img/product.png" alt="">
+                </div>
+                <div class="inner__right">
+                    <div class="inner__desc">
+                        <p>Experience the ice cream that not only brings you its creamy and delightful taste, but also contains ingredients that are especially rich in nutrients.</p>
+                    </div>
+                </div>
+            </div>
+
+            <img class="inner__ico inner__ico--4" src="img/right1.png" alt="">
+            <img class="inner__ico inner__ico--5" src="img/right2.png" alt="">
+            <img class="inner__ico inner__ico--6" src="img/right3.png" alt="">
+            
+            <!-- <svg viewBox="0 0 500 500">
+                <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+                <text width="500">
+                  <textPath alignment-baseline="bottom" xlink:href="#curve">
+                    Dangerous Curves Ahead
+                  </textPath>
+                </text>
+            </svg> -->
+
+        </div>
+    </div>
+    <!-- <?php include 'includes/footer.php';?> -->
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $('.taTabs__nav').click(function() {
+        var index = $(this).index() + 1;
+
+        $(this).closest('.taTabs').find('.taTabs__nav').removeClass('taTabs__nav--active');
+        $(this).addClass('taTabs__nav--active');
+
+        $(this).closest('.taTabs').find('.taTabs__content').removeClass('taTabs__content--active');
+        $(this).closest('.taTabs').find('.taTabs__content:nth-child(' + index + ')').addClass('taTabs__content--active');
+    })
+</script>
+
+</html>
