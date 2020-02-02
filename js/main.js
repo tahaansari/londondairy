@@ -19,10 +19,22 @@ $(document).ready(function(){
         // })
         
     }
+
+    $('.homeSlider .btnld').click(function(e){
+        e.preventDefault();
+        $('.search-popup').css('transform','scale(1)');
+    })
     
 })
 
 
+
+$(document).keyup(function(e) {
+    // esc
+    if (e.keyCode === 27){
+        $('.search-popup').css('transform','scale(0)');
+    }
+});
 
 
 $('.nav-tabs li').click(function () {

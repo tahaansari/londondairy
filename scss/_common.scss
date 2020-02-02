@@ -1,10 +1,39 @@
 .big-font{
     font-family: "signPainter";
     font-size: 150px;
-    color: #EFE4D3;
+    color: #AD9558;
     line-height: 1;
     text-align: center;
     @media(max-width: 991px){
         font-size: 70px;
+    }
+}
+
+.c-ico{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    transition: 0.1s;
+    transform: scale(1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    &--search{
+        background-image: url(../img/search-ico.svg);
+    }
+    &--close{
+        background-image: url(../img/close-ico.svg);
+    }
+    &:hover{
+        cursor: pointer;
+        background-color: #ececec;
+        transform: scale(1.1);
+    }
+    @media(max-width: 991px){
+        padding: 15px;
     }
 }

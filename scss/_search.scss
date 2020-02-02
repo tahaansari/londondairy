@@ -1,0 +1,99 @@
+.search-popup{
+    position: fixed;
+    z-index: 1;
+    background: url(../img/searchbg.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+    transform: scale(0);
+    &__heading{
+        color:#ffffff;
+        margin-bottom: 15px;
+    }
+    &__flex{
+        display: flex;
+        align-items: center;
+    }
+    &__input{
+        background: #ffffff;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 20px;
+        margin-right: 20px;
+        max-width: 518px;
+        width: 70vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    }
+}
+.search-box{
+    width: 100%;
+    float: left;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    &__flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__input{
+        background: #ffffff;
+        border-radius: 10px;
+        border: none;
+        padding: 10px 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 518px;
+        width: 70vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.50);
+    }
+    &__result{
+        margin-top: 20px;
+    }
+    @media(max-width: 991px){
+        margin-top: 30px;
+        margin-bottom: 15px;
+        &__result{
+            margin-top: 10px;
+        }
+    }
+}
+.search-result{
+    width: 100%;
+    float: left;
+    margin: 30px 0;
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__blog{
+        background-color: #EFF3F8;
+        padding: 30px 0;
+    }
+    .l-blog-list{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -20px;
+    }
+    .l-blog-list .blog{
+        width: calc(50% - 40px);
+        margin: 30px 20px;
+    }
+    @media(max-width: 991px){
+        margin: 15px 0;
+    }
+    @media(max-width: 768px){
+        .l-blog-list{
+            margin: 0 -7.5px;
+        }
+        .l-blog-list .blog{
+            width: calc(50% - 15px);
+            margin: 15px 7.5px;
+        }
+    }
+
+}
+

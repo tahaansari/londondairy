@@ -123,40 +123,6 @@ $colorGoldern:#AD9558;
     width: 100%;
     float: left;
     margin-top: 5%;
-    &__product{
-        margin: 5% 0%;
-        width: 33.33%;
-        text-align: center;
-        cursor: pointer;
-        &:hover{
-            .productList__thumbnail{ 
-                background: url(../img/fill.svg) no-repeat center/contain; 
-            }
-            .btnld{
-                background-color: #ad9558;
-                color: #ffffff;
-                .arrow-right {
-                    border-top: 2px solid #ffffff;
-                    border-left: 2px solid #ffffff;
-                }
-            }
-        }
-    }
-    &__thumbnail{ 
-        transition: 0.2s;
-        background: url(../img/outline.svg) no-repeat center/contain;
-        width: 250px;
-        height: 250px;
-        margin: auto;
-    }
-    &__thumb-img{
-        width: 170px;
-    }
-    &__title{
-        color: $colorGoldern;
-        margin-top: 30px;
-        margin-bottom: 40px;
-    }
     @media(max-width: 991px){
         margin-top: 20px;
         justify-content: flex-start;
@@ -173,6 +139,71 @@ $colorGoldern:#AD9558;
         }
         &__thumb-img{
             width: 70px;
+        }
+        &__title{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+.l-product-list{
+    display: flex;
+    flex-wrap: wrap;
+    .c-product{
+        width: 33.33%;
+        padding: 0 10px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    @media(max-width: 991px){
+        .c-product{
+            width: 50%;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+
+.c-product{
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        .c-product__imgwrap{ 
+            // background: url(../img/fill.svg) no-repeat center/contain; 
+        }
+        .btnld{
+            background-color: #ad9558;
+            color: #ffffff;
+            .arrow-right {
+                border-top: 2px solid #ffffff;
+                border-left: 2px solid #ffffff;
+            }
+        }
+    }
+    &__imgwrap{ 
+        width: 100%;
+        float: left;
+        margin-bottom: 15px;
+        // background: url(../img/outline.svg) no-repeat center/contain;
+    }
+    &__img{
+        width: 100%;
+        max-width: 250px;
+        margin: auto;
+    }
+    &__title{
+        width: 100%;
+        float: left;
+        color: $colorGoldern;
+        margin-top: 15px;
+        margin-bottom: 30px;
+    }
+    @media(max-width: 991px){
+        &__imgwrap{ 
+            margin-bottom: 10px;
         }
         &__title{
             margin-top: 10px;

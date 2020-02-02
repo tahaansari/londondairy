@@ -11,20 +11,136 @@
          crossorigin="anonymous"
          />
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="scss/slick.css" />
+      <link rel="stylesheet" href="css/slick.css" />
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <link rel="stylesheet" href="css/main.min.css" />
    </head>
    <body>
       <div class="overlay"></div>
       <!-- <?php  include 'includes/header.php';?> -->
-        <section>
+      <section>
             <div class="container">
-                <div class="search">
-                    <h2>search page</h2>
-                </div>
+               <div class="search-box">
+                  <div class="search-box__flex">
+                     <span class="c-ico c-ico--search"></span>
+                     <input class="search-box__input" type="text" placeholder="Enter your search">
+                     <span class="c-ico c-ico--close"></span>
+                  </div>
+                  <div class="search-box__result">Search Results for: New</div>
+               </div>
             </div>
-        </section>
+
+            <div class="search-result">
+
+               <div class="container">
+                  <div class="search-result__product">
+                     <div class="search-result__flex">
+                        <h2>Ice Creams</h2>
+                        <span>Search Results: 3/10</span>
+                     </div>
+                     <div class="l-product-list">
+                        <div class="c-product">
+                           <div class="c-product__imgwrap">
+                              <img class="c-product__img" src="img/tub.png" alt="">
+                           </div>
+                           <h5 class="c-product__title">Mocha Almond Fudge</h5>
+                           <a href="#" class="btnld">
+                           Discover <span class="arrow-right"></span>
+                           </a>
+                        </div>
+                        <div class="c-product">
+                           <div class="c-product__imgwrap">
+                              <img class="c-product__img" src="img/tub.png" alt="">
+                           </div>
+                           <h5 class="c-product__title">Mocha Almond Fudge</h5>
+                           <a href="#" class="btnld">
+                           Discover <span class="arrow-right"></span>
+                           </a>
+                        </div>
+                        <div class="c-product">
+                           <div class="c-product__imgwrap">
+                              <img class="c-product__img" src="img/tub.png" alt="">
+                           </div>
+                           <h5 class="c-product__title">Mocha Almond Fudge</h5>
+                           <a href="#" class="btnld">
+                           Discover <span class="arrow-right"></span>
+                           </a>
+                        </div>
+                        <div class="c-product">
+                           <div class="c-product__imgwrap">
+                              <img class="c-product__img" src="img/tub.png" alt="">
+                           </div>
+                           <h5 class="c-product__title">Mocha Almond Fudge</h5>
+                           <a href="#" class="btnld">
+                           Discover <span class="arrow-right"></span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="search-result__blog">
+                  <div class="container">
+                     <div class="search-result__flex">
+                        <h2>Recipe</h2>
+                        <span>Search Results: 3/10</span>
+                     </div>
+                     <div class="l-blog-list">
+                        <div class="blog">
+                           <div class="blog__thumb blog__thumb--fav" style="background: url(img/blog-img.png) no-repeat center/cover"></div>
+                           <div class="blog__content">
+                               <div class="blog__left">
+                                   <h2 class="blog__title">Richly Divine</h2>
+                                   Nothing feels better than Chocolate & London Dairy!
+                               </div>
+                               <div class="blog__right">
+                                   <div class="blog__ico-wrap">
+                                       <span class="blog__ico blog__ico--download"></span>
+                                       <span class="blog__ico blog__ico--share"></span>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="blog">
+                           <div class="blog__thumb blog__thumb--fav" style="background: url(img/blog-img.png) no-repeat center/cover"></div>
+                           <div class="blog__content">
+                               <div class="blog__left">
+                                   <h2 class="blog__title">Richly Divine</h2>
+                                   Nothing feels better than Chocolate & London Dairy!
+                               </div>
+                               <div class="blog__right">
+                                   <div class="blog__ico-wrap">
+                                       <span class="blog__ico blog__ico--download"></span>
+                                       <span class="blog__ico blog__ico--share"></span>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                        <div class="blog">
+                           <div class="blog__thumb blog__thumb--fav" style="background: url(img/blog-img.png) no-repeat center/cover"></div>
+                           <div class="blog__content">
+                               <div class="blog__left">
+                                   <h2 class="blog__title">Richly Divine</h2>
+                                   Nothing feels better than Chocolate & London Dairy!
+                               </div>
+                               <div class="blog__right">
+                                   <div class="blog__ico-wrap">
+                                       <span class="blog__ico blog__ico--download"></span>
+                                       <span class="blog__ico blog__ico--share"></span>
+                                   </div>
+                               </div>
+                           </div>
+                        </div>
+                        <!-- blog -->
+                     </div>
+                     <!-- l-blog-list -->
+                  </div>
+                  <!-- container -->
+               </div>
+               <!-- search-result__blog -->
+            </div>
+            <!-- search-result__blog -->
+      </section>
       <!-- <?php include 'includes/footer.php';?> -->
    </body>
    <script
